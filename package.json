@@ -1,12 +1,13 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "gatsby-starter-sam-testing",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "gatsby",
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "dev": "npm run develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
