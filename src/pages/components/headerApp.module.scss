@@ -1,6 +1,37 @@
-.header {
+header {
   padding: 1rem 0 3rem;
-}
-.link {
-  color: red;
+  display: flex;
+  flex-direction: column;
+
+  nav {
+    background-color: gray;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    ul {
+      display: flex;
+      list-style-type: none;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    li {
+      width: auto;
+      margin-top: 1rem;
+      margin-left: 2rem;
+      padding-left: 2rem;
+      padding: 1rem;
+      &:hover {
+        background-color: yellow;
+        border-radius: 25px;
+        transition: background-color 1s;
+      }
+    }
+    a {
+      margin: auto;
+    }
+  }
 }
