@@ -1,14 +1,11 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Layout } from './components'
 const Blog = () => {
   return (
-    <div>
+    <Layout>
       <h1>this is a blog</h1>
       <p>posts should show here ... </p>
-      <section>
-        <Link to="/">Go Back</Link>
-      </section>
-    </div>
+    </Layout>
   )
 }
 

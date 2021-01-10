@@ -1,15 +1,12 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Layout } from './components'
 
 const Contact = () => {
   return (
-    <div>
+    <Layout>
       <h1>Contact</h1>
       <h2>this is a contact page here</h2>
-      <section>
-        <Link to="/">Go Back</Link>
-      </section>
-    </div>
+    </Layout>
   )
 }
 export default Contact

@@ -1,9 +1,9 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Layout } from './components'
 
 const About = () => {
   return (
-    <div>
+    <Layout>
       <h1>About page</h1>
       <h2>this is a about page here</h2>
       <h3>Bio</h3>
@@ -18,11 +18,7 @@ const About = () => {
         with desktop publishing software like Aldus PageMaker including versions
         of Lorem Ipsum
       </p>
-
-      <section>
-        <Link to="/">Go Back</Link>
-      </section>
-    </div>
+    </Layout>
   )
 }
 export default About
