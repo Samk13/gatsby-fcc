@@ -1,14 +1,26 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link, graphql, useStaticQuery } from 'gatsby'
+
 import headerStyles from './headerApp.module.scss'
 
 const HeaderApp = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+          author
+        }
+      }
+    }
+  `)
+
   return (
     <header>
       <nav className={headerStyles.navContainer}>
         <h1>
           <Link to="/" activeClassName={headerStyles.activeNavItem}>
-            Sam Arbid
+            {data.site.siteMetadata.author}
           </Link>
         </h1>
         <ul>
@@ -24,11 +36,6 @@ const HeaderApp = () => {
           </li>
         </ul>
       </nav>
-      <section>
-        <Link to="/" activeClassName={headerStyles.activeClassName}>
-          Go Back
-        </Link>
-      </section>
     </header>
   )
 }
