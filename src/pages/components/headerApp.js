@@ -34,6 +34,11 @@ const HeaderApp = () => {
               about
             </Link>
           </li>
+          <li>
+            <Link to="/blog" activeClassName={headerStyles.activeNavItem}>
+              Blog
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>
